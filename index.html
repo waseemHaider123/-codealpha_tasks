@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="gallery-container">
+    <h1>Image Gallery</h1>
+
+    <div class="gallery">
+      <button class="nav-btn prev" onclick="prevImage()">&#10094;</button>
+
+      <div class="image-frame">
+        <img id="galleryImage" src="https://picsum.photos/id/1015/600/400" alt="Gallery Image" />
+        <p class="caption" id="caption">Mountain View</p>
+      </div>
+
+      <button class="nav-btn next" onclick="nextImage()">&#10095;</button>
+    </div>
+
+    <div class="dots" id="dots"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
