@@ -3,41 +3,67 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Calculator</title>
+  <title>Waseem Haider - Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <div class="calculator">
-    <div class="display" id="display">0</div>
+  <nav class="navbar">
+    <div class="logo">Waseem Haider</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <div class="buttons">
-      <button class="btn clear" onclick="clearDisplay()">AC</button>
-      <button class="btn" onclick="deleteLast()">DEL</button>
-      <button class="btn operator" onclick="appendOperator('%')">%</button>
-      <button class="btn operator" onclick="appendOperator('/')">÷</button>
+  <section class="hero" id="about">
+    <h1>Hi, I'm Waseem Haider</h1>
+    <p>MERN Stack Developer | Building full-stack web applications</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </section>
 
-      <button class="btn" onclick="appendNumber('7')">7</button>
-      <button class="btn" onclick="appendNumber('8')">8</button>
-      <button class="btn" onclick="appendNumber('9')">9</button>
-      <button class="btn operator" onclick="appendOperator('*')">×</button>
-
-      <button class="btn" onclick="appendNumber('4')">4</button>
-      <button class="btn" onclick="appendNumber('5')">5</button>
-      <button class="btn" onclick="appendNumber('6')">6</button>
-      <button class="btn operator" onclick="appendOperator('-')">−</button>
-
-      <button class="btn" onclick="appendNumber('1')">1</button>
-      <button class="btn" onclick="appendNumber('2')">2</button>
-      <button class="btn" onclick="appendNumber('3')">3</button>
-      <button class="btn operator" onclick="appendOperator('+')">+</button>
-
-      <button class="btn zero" onclick="appendNumber('0')">0</button>
-      <button class="btn" onclick="appendNumber('.')">.</button>
-      <button class="btn equals" onclick="calculate()">=</button>
+  <section class="skills" id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">React.js</div>
+      <div class="skill-card">Node.js</div>
+      <div class="skill-card">Express.js</div>
+      <div class="skill-card">MongoDB</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">HTML/CSS</div>
     </div>
-  </div>
+  </section>
 
-  <script src="script.js"></script>
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>EyeTrust</h3>
+        <p>AI-powered eye disease detection system with LLM chatbot integration.</p>
+      </div>
+      <div class="project-card">
+        <h3>Food Delivery System</h3>
+        <p>Full-stack food ordering platform with cart and order tracking.</p>
+      </div>
+      <div class="project-card">
+        <h3>Resume Builder & ATS Checker</h3>
+        <p>Build resumes and check ATS match score against job descriptions.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: waseemwh0380315@gmail.com</p>
+    <p>GitHub: github.com/waseemHaider123</p>
+    <p>LinkedIn: linkedin.com/in/waseem-haider-9121b3388</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Waseem Haider</p>
+  </footer>
+
 </body>
 </html>
